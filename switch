@@ -1,0 +1,28 @@
+import java.util.*;
+
+
+public class main {
+
+	public static void main(String[] args) {
+	int x;
+	Scanner scanner= new Scanner(System.in);
+	System.out.println("any no. less than 6");
+	x=scanner.nextInt();
+	switch(x) {
+	case 1:System.out.println("is one");
+	break;
+	case 2:System.out.println("is two");
+	break;
+	case 3:System.out.println("is three");
+	break;
+	case 4:System.out.println("is four");
+	break;
+	case 5:System.out.println("is five");
+	break;
+	default:System.out.println("not a number  between 0-6 ");
+	}
+		
+		
+	
+}
+}
