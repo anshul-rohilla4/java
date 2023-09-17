@@ -1,0 +1,19 @@
+import java.util.*;
+
+
+public class main {
+
+	public static void main(String[] args) {
+		double x,y,h;
+		Scanner scanner =new Scanner(System.in);
+		System.out.println("enter side 1");
+		x=scanner.nextDouble();
+		System.out.println("enter side 2");
+		y=scanner.nextDouble();
+		System.out.println("hypotenuse for the triangle with given sides is :");
+
+		h=Math.sqrt((x*x)+(y*y));
+		System.out.println(h);
+	}
+
+}
