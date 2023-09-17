@@ -9,9 +9,13 @@ public class main {
 		String name=scanner.nextLine();
 		System.out.println("hello "+ name);
 		int age;
-		age=scanner.nextInt();
-		
+		age=scanner.nextInt();	
 		System.out.println("u be "+age);
+		scanner.nextLine();
+		String food;
+		food =scanner.nextLine();
+		System.out.println("likes "+ food);
+
 	}
 
 }
