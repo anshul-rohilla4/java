@@ -1,0 +1,34 @@
+public class main {
+
+	public static void main(String[] args) {
+		
+		
+		
+		ArrayList<String> list = new ArrayList();
+		list.add("one");
+		list.add("two");
+		
+		
+		
+		ArrayList<String> list1 = new ArrayList();
+		list1.add("name");
+		list1.add("id_no");
+		list1.add("age");
+		
+		
+		
+		ArrayList<String> list2 = new ArrayList();
+		list2.add("pastaa");
+		list2.add("banana");
+		list2.add("almond");
+		list2.add("raisens");
+		
+		ArrayList<ArrayList<String>> lists=new ArrayList();
+		lists.add(list);
+		lists.add(list1);
+		lists.add(list2);
+		
+		System.out.println(lists.get(1).get(0));
+
+}
+}
