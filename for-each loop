@@ -1,0 +1,25 @@
+import java.util.*;
+
+
+public class main {
+
+	public static void main(String[] args) {
+		
+		String names[]= {"niko","anshul","sara"};
+		for(String i:names) // for every index i of string names 
+		{
+			System.out.println(i);
+		}
+		System.out.println("\n");
+		ArrayList<String> name1=new ArrayList();
+		name1.add("miiwko");
+		name1.add("nira");
+		name1.add("table");
+		name1.add("lokji");
+		for(String i: name1)    // for every index i of string name1
+		{
+			System.out.println(i);
+		}
+
+}
+}
