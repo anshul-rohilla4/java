@@ -1,0 +1,23 @@
+public class main {
+	
+
+	public static void main(String[] args) {
+		hello("niko",18); // calling method
+		hello("tomie",21);
+		
+		System.out.println(max_num(3,9)); 
+
+	}
+	
+	static void hello(String user,int age){   // method with no return (void)
+		System.out.println("hello "+user+", u r "+age+" yeaars old");
+	}
+	static  int max_num(int x,int y) { //method with return type
+		if(x>y) {
+			return x;
+		}else {
+			return y;
+		}
+	}
+	
+}
