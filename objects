@@ -1,0 +1,41 @@
+
+
+
+
+public class main {
+	
+
+	public static void main(String[] args) {
+		car car01 = new car();   // making an object
+		car car02=new car();
+		
+		/*
+		car01.brake();          // calling methods 
+		car01.drive();
+		System.out.println(car01.name);
+		System.out.println(car01.year);
+		System.out.println(car01.price);
+		*/
+		 
+		car02.brake();          // calling methods 
+		car02.drive();
+		System.out.println(car02.name);
+		System.out.println(car02.year);
+		System.out.println(car02.price);
+	}
+	static class car{                   //class
+		String name="BMW";       // attributes
+		int year=1978;
+		String colour="blue";
+		int price=12000;
+		
+		void  brake() {          // methods
+			System.out.println("u slowing down :( ");
+		}
+		void drive() {
+			System.out.println("speed up :) ");
+		}
+		
+	}
+	
+}
