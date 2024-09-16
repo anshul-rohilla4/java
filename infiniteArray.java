@@ -9,6 +9,18 @@ public class infiniteArray {
 
 
     }
+
+    static int findTarget(int[] array,int key){
+        int start=0;
+        int end=1;
+        while (array[end] < key) {
+            int temp= end+1;
+            end=end+(end-start+1)*2;
+            start=temp;
+        }
+        return binarySearch(array,start,end,key);
+    }
+
     static int binarySearch(int[] array,int start,int end,int key){
         int mid=0;
         while(start<=end) {
@@ -23,14 +35,5 @@ public class infiniteArray {
         return -1;
 
     }
-    static int findTarget(int[] array,int key){
-        int start=0;
-        int end=1;
-        while (array[end] < key) {
-            int temp= end+1;
-            end=end+(end-start+1)*2;
-            start=temp;
-        }
-        return binarySearch(array,start,end,key);
-    }
+
 }
