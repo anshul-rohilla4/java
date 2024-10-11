@@ -14,18 +14,19 @@ public class bubbleSort {
 
      */
     public static void main(String[] arg){
-        int[] arr={1,2,3,4,5};
+        int[] arr={1,2,3,88,2};
         System.out.println(Arrays.toString(bubble(arr)));
 
 
     }
     static int[] bubble(int[] array){
-        boolean swapped =false;
+
         for(int i=0;i<array.length;i++){
+            boolean swapped =false;
             for(int j=1;j<array.length-i;j++){
                 if(array[j]<array[j-1]){
                     swap(array,j,j-1);
-                    swapped=true; //if there is a swap ,hence the array might not be at its final position. ie.not fully sorted
+                    swapped=true; //if there is a swap ,hence the array might not be at its final position. ie. not fully sorted
                 }
             }
             if(!swapped){ //if no swap has taken place,it means the array is already sorted;

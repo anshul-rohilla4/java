@@ -8,7 +8,7 @@ public class linearSearch {
 
 //        linearS(1,array);
 //        linearS(1,array);//using for-each
-        linearS3(881,array,2,9);
+        linearS3(881,array,2,9);//to search between specific index
 
 
 
