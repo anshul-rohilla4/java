@@ -17,7 +17,6 @@ public class LC19RemoveNthNodeFromEndOfList {
             System.out.print(temp.val+" ");
             temp=temp.next;
         }
-        System.out.println();
 
 
     }
