@@ -1,3 +1,6 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class FloorAndCeil_InSortedArray {
 //Given a sorted array nums and an integer x. Find the floor and ceil of x in nums.
 // The floor of x is the largest element in the array which is smaller than or equal to x.
@@ -9,14 +12,10 @@ public class FloorAndCeil_InSortedArray {
         int x=5;
         int[] ans=getFloorAndCeil(nums,x);
 
-        for(int i:ans){
-            System.out.print(i+" ");
-        }
+        System.out.println(Arrays.toString(ans));
     }
     public static int[] getFloorAndCeil(int[] nums, int x) {
-        int[] ans=new int[2];
-        ans[0]=-1;
-        ans[1]=-1;
+        int[] ans=new int[]{-1,-1};
         int mid=-1;
         int s=0;
         int e=nums.length-1;
@@ -39,4 +38,51 @@ public class FloorAndCeil_InSortedArray {
         }
         return ans;
     }
+
+
+    //only gives ciel and floor ok 'k' else -1
+    public static int[] sol(int[] nums,int k){
+        if(nums.length==0)return new int[]{-1,-1};
+
+        int[] res=new int[]{-1,-1};
+        int low=0;
+        int high=nums.length-1;
+
+        while (low<=high){
+            int mid=low+(high-low)/2;
+            if(nums[mid]==k){
+                if(mid-1>=0 && nums[mid-1]<k){
+                    res[0]=mid-1;
+                }
+                high=mid-1;
+            }else if(nums[mid]>k){
+                high=mid-1;
+            }else{
+                low=mid+1;
+            }
+        }
+
+        low=res[0]+1;
+        high=nums.length-1;
+        while (low<=high){
+            int mid=low+(high-low)/2;
+            if(nums[mid]==k){
+                if(mid+1<=nums.length-1 && nums[mid+1]>k){
+                    res[1]=mid+1;
+                }
+                low=mid+1;
+            }else if(nums[mid]>k){
+                high=mid-1;
+            }else{
+                low=mid+1;
+            }
+        }
+
+
+        return res;
+
+    }
+
+
+
 }

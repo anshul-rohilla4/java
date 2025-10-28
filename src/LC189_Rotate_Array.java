@@ -1,6 +1,6 @@
 public class LC189_Rotate_Array {
     public static void main(String[] args) {
-        int[] nums = {1,2};
+        int[] nums = {1,2,3,4,5};
         int k = 3;//shift k times to the right
 
         //from nums.length-k index put the elements first then shift the remaining elements

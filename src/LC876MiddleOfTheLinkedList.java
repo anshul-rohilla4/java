@@ -1,6 +1,6 @@
 public class LC876MiddleOfTheLinkedList {
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4};
+        int[] arr = {1,2};
         ListNode head = LC21MergeTwoSortedLists.convertArrToLL(arr);
 
         ListNode ans=middleNode(head);

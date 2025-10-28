@@ -7,14 +7,14 @@ public class primeNumbers {
 
         // num is inclusive in result
         //int num=sc.nextInt();
-        int num=100;
+        int num=2;
         String result=primeN(num);
         System.out.println(result);
 
     }
     static String primeN(int num){
-        if(num<2) return new String("");
-        if(num==2) return new String("2");
+        if(num<2) return "";
+
         String result="";
 
 
