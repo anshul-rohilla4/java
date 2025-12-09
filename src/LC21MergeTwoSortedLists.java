@@ -1,4 +1,4 @@
-    public class LC21MergeTwoSortedLists {
+ public class LC21MergeTwoSortedLists {
         public static void main(String[] args) {
             int[] arr1={1,2,4};
             int[] arr2={1,3,4};

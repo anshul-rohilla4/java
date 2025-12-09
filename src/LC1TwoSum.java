@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.HashMap;
 
-public class LC2TwoSum {
+public class LC1TwoSum {
     public static void main(String[] args) {
         int[] nums={2,7,11,15};
         int target=9;
